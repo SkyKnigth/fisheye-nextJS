@@ -1,0 +1,74 @@
+.contact-modal-wrapper {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 40px;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 90;
+}
+
+.contact-modal {
+  position: relative;
+  width: 660px;
+  padding: 24px 34px 34px;
+  background: var(--secondary-color);
+  border-radius: 5px;
+}
+
+.contact-modal-title {
+  margin: 0 0 18px;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.contact-modal-close {
+  position: absolute;
+  top: 18px;
+  right: 26px;
+  color: #ffffff;
+  background: transparent;
+  border: 0;
+  font-size: 48px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-form label {
+  font-size: 22px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.contact-form input {
+  height: 48px;
+}
+
+.contact-form textarea {
+  height: 160px;
+  resize: none;
+}
+
+.contact-submit {
+  width: 170px;
+  margin-top: 18px;
+  padding: 18px;
+  color: #ffffff;
+  background: var(--primary-color);
+  border: 0;
+  border-radius: 5px;
+  font-weight: 700;
+}

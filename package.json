@@ -1,0 +1,29 @@
+{
+  "name": "fisheye-nextjs-openclassrooms",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.js"
+  },
+  "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^7.2.0",
+    "@fortawesome/react-fontawesome": "^3.3.1",
+    "@prisma/client": "^5.22.0",
+    "next": "14.2.16",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "eslint-config-next": "14.2.16",
+    "prisma": "^5.22.0",
+    "tsx": "^4.19.2"
+  }
+}

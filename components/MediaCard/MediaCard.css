@@ -1,0 +1,40 @@
+.media-card {
+  width: 100%;
+}
+
+.media-card-button {
+  width: 100%;
+  padding: 0;
+  background: transparent;
+  border: 0;
+}
+
+.media-card-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.media-card-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 10px;
+  color: var(--primary-color);
+}
+
+.media-card-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.media-card-like {
+  color: var(--primary-color);
+  background: transparent;
+  border: 0;
+  font-size: 18px;
+  font-weight: 700;
+}

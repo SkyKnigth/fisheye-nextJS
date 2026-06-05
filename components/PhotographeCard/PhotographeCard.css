@@ -1,0 +1,40 @@
+.photographe-card {
+  text-align: center;
+}
+
+.photographe-card-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.photographe-card-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.photographe-card-name {
+  margin: 18px 0 4px;
+  color: #d3573c;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.photographe-card-location {
+  margin: 0 0 4px;
+  color: var(--primary-color);
+  font-size: 16px;
+}
+
+.photographe-card-tagline {
+  margin: 0 0 4px;
+  font-size: 13px;
+}
+
+.photographe-card-price {
+  margin: 0;
+  color: #757575;
+  font-size: 13px;
+}
