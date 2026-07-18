@@ -55,3 +55,9 @@ video {
   top: 20px;
 }
 
+
+
+:focus-visible {
+  outline: 3px solid var(--primary-color);
+  outline-offset: 3px;
+}
