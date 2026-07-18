@@ -1,3 +1,5 @@
+// Trie les médias 
+
 export const sortMedias = (medias, sortType) => {
   return [...medias].sort((a, b) => {
     if (sortType === 'popularity') {

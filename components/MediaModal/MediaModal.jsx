@@ -1,6 +1,8 @@
 'use client';
 
 import { useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faChevronLeft, faChevronRight, faXmark,} from '@fortawesome/free-solid-svg-icons';
 import { getAssetPath } from '../../utils/getAssetPath';
 
 export default function MediaModal({ medias, currentIndex, setCurrentIndex, onClose }) {
@@ -42,7 +44,7 @@ export default function MediaModal({ medias, currentIndex, setCurrentIndex, onCl
         onClick={onClose}
         aria-label="Fermer la fenêtre du média"
       >
-        ×
+        <FontAwesomeIcon icon={faXmark} />
       </button>
 
       <button
@@ -51,7 +53,7 @@ export default function MediaModal({ medias, currentIndex, setCurrentIndex, onCl
         onClick={showPreviousMedia}
         aria-label="Média précédent"
       >
-        ‹
+        <FontAwesomeIcon icon={faChevronLeft} />
       </button>
 
       <figure className="media-modal-content">
@@ -66,6 +68,7 @@ export default function MediaModal({ medias, currentIndex, setCurrentIndex, onCl
             <source src={getAssetPath(media.video)} />
           </video>
         )}
+
         <figcaption className="media-modal-title">{media.title}</figcaption>
       </figure>
 
@@ -75,7 +78,7 @@ export default function MediaModal({ medias, currentIndex, setCurrentIndex, onCl
         onClick={showNextMedia}
         aria-label="Média suivant"
       >
-        ›
+        <FontAwesomeIcon icon={faChevronRight} />
       </button>
     </div>
   );
