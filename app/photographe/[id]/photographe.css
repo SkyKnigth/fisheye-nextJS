@@ -13,14 +13,10 @@
   justify-self: start;
 }
 
-.contact-button {
-  justify-self: center;
-}
-
 .photographe-title {
   margin: 0 0 10px;
   color: #d3573c;
-  font-size: 56px;
+  font-size: 64px;
   font-weight: 400;
 }
 
@@ -37,7 +33,9 @@
 }
 
 .contact-button {
+  justify-self: center;
   min-width: 170px;
+  height: 69px;
   padding: 20px 18px;
   color: #ffffff;
   background: var(--primary-color);
@@ -45,8 +43,6 @@
   border-radius: 5px;
   font-weight: 700;
 }
-
-
 
 .contact-button:hover,
 .contact-button:focus {
@@ -63,10 +59,10 @@
 
 .media-gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px 80px;
-  margin-top: 40px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px;
 }
+
 
 .likes-summary {
   position: fixed;
@@ -78,24 +74,24 @@
   color: #000000;
   background: var(--secondary-color);
   border-radius: 5px 5px 0 0;
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 24px;
+  font-weight: 500;
 }
 
 @media (max-width: 1250px) {
   .media-gallery {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
   }
 }
 
-@media (max-width: 850px) {
-
+@media (max-width: 980px) {
   .photographe-header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;          /* au lieu des 60px */
-    padding: 30px 20px; /* moins d'espace */
+    gap: 20px;
+    padding: 30px 20px;
   }
 
   .photographe-portrait {
@@ -106,6 +102,7 @@
 
   .photographe-info {
     order: 2;
+    justify-self: auto;
     text-align: center;
   }
 
@@ -124,26 +121,21 @@
 
   .contact-button {
     order: 3;
-    margin-top: 10px; /* au lieu de 20px */
+    margin-top: 10px;
   }
 
   .media-gallery {
-  grid-template-columns: 1fr;
-  justify-items: center;
-  gap: 35px;
+    grid-template-columns: 1fr;
+    gap: 24px;
   }
 
-   .media-card {
-    width: 100%;
-    max-width: none;
+  .likes-summary {
+    display: none;
   }
+}
 
-  .media-card-image,
-  .media-card-video {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
+@media (max-width: 400px) {
+  .media-gallery {
+    grid-template-columns: minmax(0, 1fr);
   }
-
 }
