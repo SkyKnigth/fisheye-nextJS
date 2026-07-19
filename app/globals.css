@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
 :root {
   --primary-color: #901c1c;
   --secondary-color: #db8876;
@@ -10,7 +12,7 @@
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "DM Sans", Arial, Helvetica, sans-serif;
   color: var(--text-color);
   background: #ffffff;
 }
